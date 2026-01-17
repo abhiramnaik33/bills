@@ -1,0 +1,337 @@
+/* =========================================
+   Theme 1: Standard (Default)
+   Clean, slate colors, balanced
+   ========================================= */
+.theme-standard .invoice-header {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.theme-standard .invoice-label {
+    color: var(--primary-color);
+}
+
+.theme-standard .total-row.grand-total {
+    background-color: var(--primary-color);
+}
+
+/* =========================================
+   Theme 2: Classic
+   Serif fonts, traditional lines, black & white
+   ========================================= */
+.theme-classic {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+}
+
+.theme-classic .invoice-label {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.theme-classic .invoice-header {
+    border-bottom: 4px double #000;
+}
+
+.theme-classic .products-table th {
+    background-color: #fff;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.theme-classic .products-table td {
+    border-bottom: 1px dotted #ccc;
+}
+
+.theme-classic .total-row.grand-total {
+    background-color: transparent;
+    color: #000;
+    border-top: 2px solid #000;
+    border-bottom: 4px double #000;
+    border-radius: 0;
+}
+
+/* =========================================
+   Theme 3: Modern Bold
+   Thick dark headers, strong contrast
+   ========================================= */
+.theme-modern-bold .invoice-header {
+    border: none;
+    background-color: #111;
+    color: #fff;
+    padding: 2rem;
+    margin: -40px -40px 2rem -40px;
+    /* Bleed to edges */
+    align-items: center;
+}
+
+.theme-modern-bold .invoice-title-block,
+.theme-modern-bold .company-info-block {
+    z-index: 1;
+}
+
+.theme-modern-bold .invoice-label {
+    color: #fff;
+}
+
+.theme-modern-bold .invoice-id {
+    color: #aaa;
+}
+
+.theme-modern-bold .entity-name {
+    color: #fff;
+    /* In header */
+}
+
+.theme-modern-bold .invoice-header .entity-details {
+    color: #ccc;
+}
+
+.theme-modern-bold .products-table th {
+    background-color: #f3f4f6;
+    color: #111;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.theme-modern-bold .total-row.grand-total {
+    background-color: #111;
+    color: #fff;
+    border-radius: 0;
+}
+
+/* =========================================
+   Theme 4: Corporate
+   Blue accents, professional grays, structured
+   ========================================= */
+.theme-corporate {
+    --corp-blue: #0056b3;
+    --corp-bg: #f0f7ff;
+}
+
+.theme-corporate .invoice-label {
+    color: var(--corp-blue);
+}
+
+.theme-corporate .entity-name {
+    color: var(--corp-blue);
+}
+
+.theme-corporate .products-table th {
+    background-color: var(--corp-blue);
+    color: white;
+}
+
+.theme-corporate .products-table tr:nth-child(even) {
+    background-color: var(--corp-bg);
+}
+
+.theme-corporate .total-row.grand-total {
+    background-color: var(--corp-blue);
+}
+
+/* =========================================
+   Theme 5: Minimal
+   No borders, whitespace focused, very clean
+   ========================================= */
+.theme-minimal .invoice-header {
+    border-bottom: none;
+    margin-bottom: 4rem;
+}
+
+.theme-minimal .invoice-label {
+    font-weight: 300;
+    color: #888;
+}
+
+.theme-minimal .products-table th {
+    background-color: transparent;
+    border-bottom: 1px solid #eee;
+    color: #888;
+    font-weight: 500;
+}
+
+.theme-minimal .products-table td {
+    border-bottom: none;
+}
+
+.theme-minimal .total-row.grand-total {
+    background-color: #f9fafb;
+    color: #333;
+    border-radius: 4px;
+}
+
+/* =========================================
+   Theme 6: Creative
+   Rounded corners, gradient dashes, playful
+   ========================================= */
+.theme-creative .invoice-paper {
+    border-top: 8px solid #8b5cf6;
+}
+
+.theme-creative .invoice-label {
+    color: #8b5cf6;
+    font-family: 'Outfit', sans-serif;
+}
+
+.theme-creative .entity-name {
+    color: #6d28d9;
+}
+
+.theme-creative .products-table th {
+    background: linear-gradient(90deg, #8b5cf6, #c4b5fd);
+    color: white;
+    border-radius: 4px;
+}
+
+.theme-creative .total-row.grand-total {
+    background: linear-gradient(90deg, #8b5cf6, #7c3aed);
+}
+
+/* =========================================
+   Theme 7: Tech
+   Monospace font accents, digital look, sharp lines
+   ========================================= */
+.theme-tech {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.theme-tech .invoice-label,
+.theme-tech .entity-name,
+.theme-tech .section-caption {
+    font-family: 'Share Tech Mono', monospace;
+    /* Fallback if not loaded, mostly inherits */
+}
+
+.theme-tech .invoice-header {
+    border-bottom: 2px dashed #00ff00;
+    /* Matrix style green or just tech green? Let's go simpler dark tech */
+    border-color: #22c55e;
+}
+
+.theme-tech .invoice-label {
+    color: #22c55e;
+}
+
+.theme-tech .products-table th {
+    border-bottom: 2px solid #22c55e;
+    color: #22c55e;
+    background-color: transparent;
+}
+
+.theme-tech .products-table td {
+    border-bottom: 1px solid #ddd;
+}
+
+.theme-tech .total-row.grand-total {
+    background-color: #22c55e;
+    color: #000;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/* =========================================
+   Theme 8: Elegant
+   Serif headers, gold/accent touches, centered
+   ========================================= */
+.theme-elegant .invoice-header {
+    border-bottom: 1px solid #d4af37;
+    /* Gold */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.theme-elegant .company-info-block {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.theme-elegant .invoice-title-block {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.theme-elegant .invoice-label {
+    color: #d4af37;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.theme-elegant .products-table th {
+    border-top: 1px solid #d4af37;
+    border-bottom: 1px solid #d4af37;
+    background-color: #fffaf0;
+    color: #8a6a1c;
+    font-family: Georgia, serif;
+}
+
+.theme-elegant .total-row.grand-total {
+    background-color: #d4af37;
+    color: #fff;
+}
+
+/* =========================================
+   Theme 9: Compact
+   Tighter spacing, efficient for long lists
+   ========================================= */
+.theme-compact .invoice-paper {
+    padding: 20px;
+}
+
+.theme-compact .invoice-header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.theme-compact .products-table th,
+.theme-compact .products-table td {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.theme-compact .invoice-label {
+    font-size: 2rem;
+}
+
+.theme-compact .total-row {
+    padding: 0.25rem 0.5rem;
+}
+
+/* =========================================
+   Theme 10: Bold Color
+   Inverted header with white text, red accent
+   ========================================= */
+.theme-bold-color .invoice-paper {
+    border: 4px solid #dc2626;
+}
+
+.theme-bold-color .invoice-header {
+    background-color: #dc2626;
+    margin: -40px -40px 2rem -40px;
+    padding: 3rem;
+    color: white;
+    border-bottom: none;
+}
+
+.theme-bold-color .invoice-label {
+    color: white;
+}
+
+.theme-bold-color .invoice-id,
+.theme-bold-color .entity-details,
+.theme-bold-color .entity-name {
+    color: white !important;
+}
+
+.theme-bold-color .products-table th {
+    background-color: #fecaca;
+    color: #991b1b;
+}
+
+.theme-bold-color .total-row.grand-total {
+    background-color: #dc2626;
+}
